@@ -1,0 +1,58 @@
+settings:
+  subscription:
+    url: "https://vpn.server.com"
+    uri: "subs"
+  db:
+    ge/x-ui.db: 1
+    cz/x-ui.db: 1
+    nl/x-ui.db: 1
+  default:
+    - total_gb=1
+    - duration_days=90
+    - reset_days=2
+  welcome:
+    en: "Welcome, this is your completely free subscription VPN, you have {quota}, renews every {reset} days. Enjoy!\n\n{sub_url}\n\nDo you need help? Call this command /help"
+    es: "Bienvenido, esta es su suscripción VPN completamente gratuita, tiene {quota}, se renueva cada {reset} días. ¡Disfruta!\n\n{sub_url}\n\n¿Necesita ayuda? Llame a este comando /help"
+    fr: "Bienvenue, voici votre abonnement VPN entièrement gratuit, vous avez {quota}, se renouvelle tous les {reset} jours. Profitez-en!\n\n{sub_url}\n\nVous avez besoin d'aide? Appelez cette commande /help"
+    ru: "Добро пожаловать, это ваша полностью бесплатная подписка на VPN, у вас есть {quota}, обновляется каждые {reset} дней. Наслаждайтесь!\n\n{sub_url}\n\nВам нужна помощь? Вызовите эту команду /help"
+  status:
+    en: "This is your VPN subscription: \n\n{sub_url}\n\n You have used {used_gb} GB of {total_gb} GB, renews every {reset} days, expires on {expiration_date}\nDo you need help? Call this command /help"
+    es: "Esta es su suscripción VPN: \n\n{sub_url}\n\n Ha utilizado {used_gb} GB de {total_gb} GB, se renueva cada {reset} días, expira el {expiration_date}\n¿Necesita ayuda? Llame a este comando /help"
+    fr: "Ceci est votre abonnement VPN: \n\n{sub_url}\n\n Vous avez utilisé {used_gb} Go sur {total_gb} Go, se renouvelle tous les {reset} jours, expire le {expiration_date}\nVous avez besoin d'aide? Appelez cette commande /help"
+    ru: "Это ваша подписка на VPN: \n\n{sub_url}\n\n Вы использовали {used_gb} ГБ из {total_gb} ГБ, обновляется каждые {reset} дней, истекает {expiration_date}\nВам нужна помощь? Вызовите эту команду /help"
+  quota_exceeded:
+    en: "You have exceeded your quota of {total_gb} GB.\nYour access will be restored in {reset} days, or on the next renewal date.\n\nExpires on: {expiration_date}\nDo you need help? Call this command /help"
+    es: "Ha excedido su cuota de {total_gb} GB.\nSu acceso será restaurado en {reset} días, o en la próxima fecha de renovación.\n\nExpira el: {expiration_date}\n¿Necesita ayuda? Llame a este comando /help"
+    fr: "Vous avez dépassé votre quota de {total_gb} Go.\nVotre accès sera rétabli dans {reset} jours, ou à la prochaine date de renouvellement.\n\nExpire le: {expiration_date}\nVous avez besoin d'aide? Appelez cette commande /help"
+    ru: "Вы превысили свою квоту в {total_gb} ГБ.\nВаш доступ будет восстановлен через {reset} дней или в следующую дату продления.\n\nИстекает: {expiration_date}\nВам нужна помощь? Вызовите эту команду /help"
+  help:
+    en: |
+      *Instructions:*
+      1. Copy the subscription link provided above.
+      2. Install and open Hiddify.
+      3. New profile > Add from clipboard.
+    es: |
+      *Instrucciones:*
+      1. Copie el enlace de suscripción proporcionado arriba.
+      2. Instale y abra Hiddify.
+      3. Nuevo perfil > Agregar desde el portapapeles.
+    fr: |
+      *Instructions:*
+      1. Copiez le lien d'abonnement fourni ci-dessus.
+      2. Installez et ouvrez Hiddify.
+      3. Nouveau profil > Ajouter depuis le presse-papiers.
+    ru: |
+      *Инструкции:*
+      1. Скопируйте ссылку на подписку, указанную выше.
+      2. Установите и откройте Hiddify.
+      3. Новый профиль > Добавить из буфера обмена.
+  trial_end:
+    en: "Your free trial has ended. To continue using the VPN service, please consider subscribing to one of our paid plans. For more information, contact us."
+    es: "Su prueba gratuita ha terminado. Para continuar utilizando el servicio VPN, considere suscribirse a uno de nuestros planes pagos. Para más información, contáctenos."
+    fr: "Votre essai gratuit est terminé. Pour continuer à utiliser le service VPN, veuillez envisager de vous abonner à l'un de nos plans payants. Pour plus d'informations, contactez-nous."
+    ru: "Ваш бесплатный пробный период закончился. Чтобы продолжить использование VPN-сервиса, пожалуйста, рассмотрите возможность подписки на один из наших платных планов. Для получения дополнительной информации свяжитесь с нами."
+  contact:
+    en: "For more information about our paid plans and pricing, please contact us at @HiddifySupport."
+    es: "Para obtener más información sobre nuestros planes pagos y precios, contáctenos en @HiddifySupport."
+    fr: "Pour plus d'informations sur nos plans payants et nos tarifs, veuillez nous contacter à @HiddifySupport."
+    ru: "Для получения дополнительной информации о наших платных планах и ценах, пожалуйста, свяжитесь с нами по адресу @HiddifySupport."
