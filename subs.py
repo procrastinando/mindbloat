@@ -3,7 +3,7 @@ import socketserver
 import functools
 
 PORT = 8080
-DIRECTORY = "subs"
+DIRECTORY = "sub"
 
 # Create a handler class that will serve files from the specified DIRECTORY
 Handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=DIRECTORY)

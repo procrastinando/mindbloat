@@ -30,6 +30,8 @@ settings:
     es: "Esta es su suscripción VPN: \n\n{sub_url}\n\n Ha utilizado {used_gb} GB de {total_gb} GB, expira el {expiration_date}\n¿Necesita ayuda? Llame a este comando /help"
     fr: "Ceci est votre abonnement VPN: \n\n{sub_url}\n\n Vous avez utilisé {used_gb} Go sur {total_gb} Go, expire le {expiration_date}\nVous avez besoin d'aide? Appelez cette commande /help"
     ru: "Это ваша подписка на VPN: \n\n{sub_url}\n\n Вы использовали {used_gb} ГБ из {total_gb} ГБ, истекает {expiration_date}\nВам нужна помощь? Вызовите эту команду /help"
+  quota_warning:
+    en: 
   quota_exceeded:
     en: "You have exceeded your quota of {total_gb} GB.\nYour access will be restored on the next renewal date.\n\nExpires on: {expiration_date}\nDo you need more data? Call this command /help"
     es: "Ha excedido su cuota de {total_gb} GB.\nSu acceso se restaurará en la próxima fecha de renovación.\n\nExpira el: {expiration_date}\n¿Necesita más datos? Llame a este comando /help"
