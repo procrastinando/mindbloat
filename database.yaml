@@ -1,13 +1,23 @@
 settings:
   subscription:
-    url: "https://vpn.server.com"
-    uri: "subs"
+    url: "https://subs.mindbloat.com"
+    user: "admin"
+    password: "admin"
   db:
-    ge/x-ui.db: 1
-    cz/x-ui.db: 1
-    nl/x-ui.db: 1
+    de:
+      path: de/x-ui.db
+      address: 192.168.80.2
+      port: 12345
+      inbound: 1
+      panel_path: "/abcdefg/"
+    nl:
+      path: nl/x-ui.db
+      address: 192.168.80.3
+      port: 54321
+      inbound: 1
+      panel_path: "/gfedcba/"
   default:
-    - total_gb=1
+    - total_gb=10
     - duration_days=90
     - reset_days=0
   welcome:
