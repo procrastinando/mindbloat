@@ -9,22 +9,22 @@ settings:
   default:
     - total_gb=1
     - duration_days=90
-    - reset_days=2
+    - reset_days=0
   welcome:
-    en: "Welcome, this is your completely free subscription VPN, you have {quota}, renews every {reset} days. Enjoy!\n\n{sub_url}\n\nDo you need help? Call this command /help"
-    es: "Bienvenido, esta es su suscripción VPN completamente gratuita, tiene {quota}, se renueva cada {reset} días. ¡Disfruta!\n\n{sub_url}\n\n¿Necesita ayuda? Llame a este comando /help"
-    fr: "Bienvenue, voici votre abonnement VPN entièrement gratuit, vous avez {quota}, se renouvelle tous les {reset} jours. Profitez-en!\n\n{sub_url}\n\nVous avez besoin d'aide? Appelez cette commande /help"
-    ru: "Добро пожаловать, это ваша полностью бесплатная подписка на VPN, у вас есть {quota}, обновляется каждые {reset} дней. Наслаждайтесь!\n\n{sub_url}\n\nВам нужна помощь? Вызовите эту команду /help"
+    en: "Welcome, this is your completely free subscription VPN, you have {quota}. Enjoy!\n\n{sub_url}\n\nDo you need help to install the app? Call this command /help"
+    es: "Bienvenido, esta es su suscripción VPN completamente gratuita, tiene {quota}. ¡Disfruta!\n\n{sub_url}\n\n¿Necesita ayuda para instalar la aplicación? Llame a este comando /help"
+    fr: "Bienvenue, voici votre abonnement VPN entièrement gratuit, vous avez {quota}. Profitez-en!\n\n{sub_url}\n\nVous avez besoin d'aide pour installer l'application? Appelez cette commande /help"
+    ru: "Добро пожаловать, это ваша полностью бесплатная подписка на VPN, у вас есть {quota}. Наслаждайтесь!\n\n{sub_url}\n\nВам нужна помощь с установкой приложения? Вызовите эту команду /help"
   status:
-    en: "This is your VPN subscription: \n\n{sub_url}\n\n You have used {used_gb} GB of {total_gb} GB, renews every {reset} days, expires on {expiration_date}\nDo you need help? Call this command /help"
-    es: "Esta es su suscripción VPN: \n\n{sub_url}\n\n Ha utilizado {used_gb} GB de {total_gb} GB, se renueva cada {reset} días, expira el {expiration_date}\n¿Necesita ayuda? Llame a este comando /help"
-    fr: "Ceci est votre abonnement VPN: \n\n{sub_url}\n\n Vous avez utilisé {used_gb} Go sur {total_gb} Go, se renouvelle tous les {reset} jours, expire le {expiration_date}\nVous avez besoin d'aide? Appelez cette commande /help"
-    ru: "Это ваша подписка на VPN: \n\n{sub_url}\n\n Вы использовали {used_gb} ГБ из {total_gb} ГБ, обновляется каждые {reset} дней, истекает {expiration_date}\nВам нужна помощь? Вызовите эту команду /help"
+    en: "This is your VPN subscription: \n\n{sub_url}\n\n You have used {used_gb} GB of {total_gb} GB, expires on {expiration_date}\nDo you need help? Call this command /help"
+    es: "Esta es su suscripción VPN: \n\n{sub_url}\n\n Ha utilizado {used_gb} GB de {total_gb} GB, expira el {expiration_date}\n¿Necesita ayuda? Llame a este comando /help"
+    fr: "Ceci est votre abonnement VPN: \n\n{sub_url}\n\n Vous avez utilisé {used_gb} Go sur {total_gb} Go, expire le {expiration_date}\nVous avez besoin d'aide? Appelez cette commande /help"
+    ru: "Это ваша подписка на VPN: \n\n{sub_url}\n\n Вы использовали {used_gb} ГБ из {total_gb} ГБ, истекает {expiration_date}\nВам нужна помощь? Вызовите эту команду /help"
   quota_exceeded:
-    en: "You have exceeded your quota of {total_gb} GB.\nYour access will be restored in {reset} days, or on the next renewal date.\n\nExpires on: {expiration_date}\nDo you need help? Call this command /help"
-    es: "Ha excedido su cuota de {total_gb} GB.\nSu acceso será restaurado en {reset} días, o en la próxima fecha de renovación.\n\nExpira el: {expiration_date}\n¿Necesita ayuda? Llame a este comando /help"
-    fr: "Vous avez dépassé votre quota de {total_gb} Go.\nVotre accès sera rétabli dans {reset} jours, ou à la prochaine date de renouvellement.\n\nExpire le: {expiration_date}\nVous avez besoin d'aide? Appelez cette commande /help"
-    ru: "Вы превысили свою квоту в {total_gb} ГБ.\nВаш доступ будет восстановлен через {reset} дней или в следующую дату продления.\n\nИстекает: {expiration_date}\nВам нужна помощь? Вызовите эту команду /help"
+    en: "You have exceeded your quota of {total_gb} GB.\nYour access will be restored on the next renewal date.\n\nExpires on: {expiration_date}\nDo you need more data? Call this command /help"
+    es: "Ha excedido su cuota de {total_gb} GB.\nSu acceso se restaurará en la próxima fecha de renovación.\n\nExpira el: {expiration_date}\n¿Necesita más datos? Llame a este comando /help"
+    fr: "Vous avez dépassé votre quota de {total_gb} Go.\nVotre accès sera rétabli à la prochaine date de renouvellement.\n\nExpire le: {expiration_date}\nVous avez besoin de plus de données? Appelez cette commande /help"
+    ru: "Вы превысили свою квоту в {total_gb} ГБ.\nВаш доступ будет восстановлен в следующую дату продления.\n\nИстекает: {expiration_date}\nВам нужно больше данных? Вызовите эту команду /help"
   help:
     en: |
       *Instructions:*
