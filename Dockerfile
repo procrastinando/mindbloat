@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     bash
 
 # The docker-compose build context already clones the repo.
-# We just need to copy the contents into our WORKDIR.
+# Copy the contents from the build context into our WORKDIR.
 COPY . .
 
 # Install any needed packages specified in requirements.txt
@@ -19,5 +19,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8080
 
 # Run the three python scripts in parallel using bash
-# The `wait -n` will cause the script to exit as soon as any of the background jobs stop
 CMD ["bash", "-c", "python bot.py & python subs.py & python cron.py & wait -n"]
