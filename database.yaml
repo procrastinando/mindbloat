@@ -1,38 +1,62 @@
 settings:
   subscription:
-    url: "https://subs.domain.com"
+    url: "https://subscriptions.domain.com"
+    name: "Mindbloat"
     user: "admin"
     password: "admin"
   db:
-    de:
-      path: de/x-ui.db
-      address: "https://192.168.80.7:12345"
-      inbound: 1
-      panel_path: "/abcdefg/"
     nl:
       path: nl/x-ui.db
-      address: "https://192.168.80.7:54321"
-      inbound: 1
-      panel_path: "/gfedcba/"
+      address: "https://192.168.80.4:2096"
+      inbound:
+      - 1
+      - 2
+      panel_path: "/b4c8n2o7r9s3t5y1/"
+    de:
+      path: de/x-ui.db
+      address: "https://192.168.80.3:8443"
+      inbound:
+      - 1
+      - 2
   default:
-    - total_gb=10
-    - duration_days=30
+    - total_gb=3.5
+    - duration_days=90
     - reset_days=0
   welcome:
-    en: "Welcome, this is your completely free subscription VPN, you have {quota}. Enjoy!\n\n{sub_url}\n\nDo you need help to install the app? Call this command /help"
+    en: "Welcome, this is your completely free subscription VPN, you have {quota} GB per week.\n\nYour subscription link is below:\n\n{sub_url}\n\nDo you need help? Call this command /help"
   status:
-    en: "This is your VPN subscription: \n\n{sub_url}\n\n You have used {used_gb} GB of {total_gb} GB, expires on {expiration_date}\nDo you need help? Call this command /help"
+    en: "This is your VPN subscription: \n\n{sub_url}\n\nYou have {used_gb} GB of {total_gb} GB per week, expires on {expiration_date}\n\nDo you need help? Call this command /help"
   quota_warning:
-    en: 
+    en: "Warning: You have {used_gb} GB left of your {total_gb} GB quota.\n\nYour access will be restricted upon reaching the limit.\n\nExpires on: {expiration_date}\n\nDo you need more data? Call this command /help"
   quota_exceeded:
-    en: "You have exceeded your quota of {total_gb} GB.\nYour access will be restored on the next renewal date.\n\nExpires on: {expiration_date}\nDo you need more data? Call this command /help"
+    en: "You have exceeded your quota of {total_gb} GB.\n\nYour access will be restored on the next renewal date.\n\nExpires on: {expiration_date}\n\nDo you need more data? Call this command /help"
   help:
     en: |
       *Instructions:*
-      1. Copy the subscription link provided above.
-      2. Install and open Hiddify.
-      3. New profile > Add from clipboard.
+      1. Tap to copy the subscription link provided above.
+      2. Install and open V2RayTun.
+      3. Tap on "+" > "Import config from clipboard".
+      4. All the available servers will be shown as "Mindbloat" subscription.
+
+      *FAQ:*
+      *Q:* Is this VPN really free?
+        *A:* Yes, this VPN subscription is completely free with a weekly data quota.
+      
+      *Q:* What happens when I exceed my data quota?
+        *A:* Once you exceed your data quota, your access will be restricted until the next renewal date.
+      
+      *Q:* Can I use my subscription on multiple devices?
+        *A:* Yes, you can use the same subscription link on multiple devices, but the data quota is shared across all devices.
+      
+      *Q:* Can I use my subscription on Windows/Mac/Linux?
+        *A:* Yes, you can use [v2rayN](https://github.com/2dust/v2rayN/releases/latest) on Windows and Linux and [v2rayU](https://github.com/yanue/V2rayU/releases/latest) on Mac.
+      
+      *Q:* Can I install it on my router and share VPN to all my house?
+        *A:* Yes, /contact for more information.
+      
+      *Q:* Can I use this VPN to access to ChatGPT, Netflix, anonymously to Youtube or download Torrents?
+        *A:* Yes, this VPN uses clean IP addresses to access those services with no restrictions.
   trial_end:
-    en: "Your free trial has ended. To continue using the VPN service, please consider subscribing to one of our paid plans. For more information, contact us."
+    en: "Your subscription has ended. To continue using the VPN service, please consider subscribing to one of our paid plans. For more information, /contact."
   contact:
-    en: "For more information about our paid plans and pricing, please contact us at @HiddifySupport."
+    en: "For more information about our paid plans and pricing, please contact us at @."
