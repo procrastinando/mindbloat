@@ -1,27 +1,29 @@
 settings:
   subscription:
-    url: "https://subscriptions.domain.com"
-    name: "Mindbloat"
+    url: "https://subs.vpn.com"
+    name: "VPN"
     user: "admin"
     password: "admin"
   db:
-    nl:
-      path: nl/x-ui.db
-      address: "https://192.168.80.4:2096"
-      inbound:
-      - 1
-      - 2
-      panel_path: "/b4c8n2o7r9s3t5y1/"
     de:
-      path: de/x-ui.db
-      address: "https://192.168.80.3:8443"
+      path: nl/x-ui.db
+      address: "https://192.168.80.3:2096"
       inbound:
       - 1
       - 2
+      panel_path: "/123456789/"
+    nl:
+      path: de/x-ui.db
+      address: "https://192.168.80.4:8443"
+      inbound:
+      - 1
+      - 2
+      panel_path: "/abcdefghi/"
   default:
     - total_gb=3.5
     - duration_days=90
     - reset_days=0
+
   welcome:
     en: "Welcome, this is your completely free subscription VPN, you have {quota} GB per week.\n\nYour subscription link is below:\n\n{sub_url}\n\nDo you need help? Call this command /help"
   status:
@@ -47,16 +49,12 @@ settings:
       
       *Q:* Can I use my subscription on multiple devices?
         *A:* Yes, you can use the same subscription link on multiple devices, but the data quota is shared across all devices.
-      
+
       *Q:* Can I use my subscription on Windows/Mac/Linux?
         *A:* Yes, you can use [v2rayN](https://github.com/2dust/v2rayN/releases/latest) on Windows and Linux and [v2rayU](https://github.com/yanue/V2rayU/releases/latest) on Mac.
-      
-      *Q:* Can I install it on my router and share VPN to all my house?
-        *A:* Yes, /contact for more information.
-      
-      *Q:* Can I use this VPN to access to ChatGPT, Netflix, anonymously to Youtube or download Torrents?
-        *A:* Yes, this VPN uses clean IP addresses to access those services with no restrictions.
+
   trial_end:
     en: "Your subscription has ended. To continue using the VPN service, please consider subscribing to one of our paid plans. For more information, /contact."
+
   contact:
     en: "For more information about our paid plans and pricing, please contact us at @."

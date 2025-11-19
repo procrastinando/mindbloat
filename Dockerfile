@@ -4,7 +4,7 @@ FROM python:3.9-slim
 WORKDIR /mindbloat
 
 # Install system dependencies, including bash
-RUN apt-get update && apt-get install -y --no-install-recommends nano \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     bash
 
